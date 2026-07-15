@@ -1,0 +1,11 @@
+{
+  "colors": {
+    "background": { "dark": { "color": "{{ colors.background.dark.hex }}" }, "light": { "color": "{{ colors.background.light.hex }}" } },
+    "on_background": { "dark": { "color": "{{ colors.on_background.dark.hex }}" }, "light": { "color": "{{ colors.on_background.light.hex }}" } },
+    "on_surface_variant": { "dark": { "color": "{{ colors.on_surface_variant.dark.hex }}" }, "light": { "color": "{{ colors.on_surface_variant.light.hex }}" } },
+    "primary": { "dark": { "color": "{{ colors.primary.dark.hex }}" }, "light": { "color": "{{ colors.primary.light.hex }}" } },
+    "secondary": { "dark": { "color": "{{ colors.secondary.dark.hex }}" }, "light": { "color": "{{ colors.secondary.light.hex }}" } },
+    "tertiary": { "dark": { "color": "{{ colors.tertiary.dark.hex }}" }, "light": { "color": "{{ colors.tertiary.light.hex }}" } },
+    "error": { "dark": { "color": "{{ colors.error.dark.hex }}" }, "light": { "color": "{{ colors.error.light.hex }}" } }
+  }
+}

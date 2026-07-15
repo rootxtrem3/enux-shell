@@ -1,0 +1,93 @@
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="{{ colors.background.dark.hex }}"
+
+# Main text color
+theme[main_fg]="{{ colors.on_background.dark.hex }}"
+
+# Title color for boxes
+theme[title]="{{ colors.on_background.dark.hex }}"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="{{ colors.primary.dark.hex }}"
+
+# Background color of selected item in processes box
+theme[selected_bg]="{{ colors.surface_container_high.dark.hex }}"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="{{ colors.background.dark.hex }}"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="{{ colors.outline.dark.hex }}"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="{{ colors.on_surface.dark.hex }}"
+
+# Background color of the percentage meters
+theme[meter_bg]="{{ colors.surface_variant.dark.hex }}"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="{{ colors.on_surface.dark.hex }}"
+
+# CPU, Memory, Network, Proc box outline colors
+theme[cpu_box]="{{ colors.tertiary.dark.hex }}"
+theme[mem_box]="{{ colors.secondary.dark.hex }}"
+theme[net_box]="{{ colors.error.dark.hex }}"
+theme[proc_box]="{{ colors.primary.dark.hex }}"
+
+# Box divider line and small boxes line color
+theme[div_line]="{{ colors.outline.dark.hex }}"
+
+# Temperature graph color (Green -> Yellow -> Red)
+theme[temp_start]="{{ colors.secondary.dark.hex }}"
+theme[temp_mid]="{{ colors.tertiary.dark.hex }}"
+theme[temp_end]="{{ colors.error.dark.hex }}"
+
+# CPU graph colors (Teal -> Blue -> Magenta)
+theme[cpu_start]="{{ colors.tertiary.dark.hex }}"
+theme[cpu_mid]="{{ colors.primary.dark.hex }}"
+theme[cpu_end]="{{ colors.error.dark.hex }}"
+
+# Mem/Disk free meter
+theme[free_start]="{{ colors.error.dark.hex }}"
+theme[free_mid]="{{ colors.primary.dark.hex }}"
+theme[free_end]="{{ colors.tertiary.dark.hex }}"
+
+# Mem/Disk cached meter
+theme[cached_start]="{{ colors.primary.dark.hex }}"
+theme[cached_mid]="{{ colors.tertiary.dark.hex }}"
+theme[cached_end]="{{ colors.error.dark.hex }}"
+
+# Mem/Disk available meter
+theme[available_start]="{{ colors.tertiary.dark.hex }}"
+theme[available_mid]="{{ colors.error.dark.hex }}"
+theme[available_end]="{{ colors.error.dark.hex }}"
+
+# Mem/Disk used meter (Green -> Teal -> Blue)
+theme[used_start]="{{ colors.secondary.dark.hex }}"
+theme[used_mid]="{{ colors.tertiary.dark.hex }}"
+theme[used_end]="{{ colors.primary.dark.hex }}"
+
+# Download graph colors
+theme[download_start]="{{ colors.tertiary.dark.hex }}"
+theme[download_mid]="{{ colors.error.dark.hex }}"
+theme[download_end]="{{ colors.error.dark.hex }}"
+
+# Upload graph colors (Green -> Teal -> Blue)
+theme[upload_start]="{{ colors.secondary.dark.hex }}"
+theme[upload_mid]="{{ colors.tertiary.dark.hex }}"
+theme[upload_end]="{{ colors.primary.dark.hex }}"
+
+# Process box color gradient for threads, mem and cpu usage
+theme[process_start]="{{ colors.tertiary.dark.hex }}"
+theme[process_mid]="{{ colors.primary.dark.hex }}"
+theme[process_end]="{{ colors.error.dark.hex }}"
+
+# Graph gradient colors (spectrum shades from background to foreground)
+theme[gradient_color_0]="{{ colors.background.dark.hex }}"
+theme[gradient_color_1]="{{ colors.surface_container_low.dark.hex }}"
+theme[gradient_color_2]="{{ colors.surface_container_high.dark.hex }}"
+theme[gradient_color_3]="{{ colors.outline.dark.hex }}"
+theme[gradient_color_4]="{{ colors.on_surface_variant.dark.hex }}"
+theme[gradient_color_5]="{{ colors.on_background.dark.hex }}"
+theme[gradient_color_6]="{{ colors.surface_bright.dark.hex }}"
+theme[gradient_color_7]="{{ colors.on_primary.dark.hex }}"

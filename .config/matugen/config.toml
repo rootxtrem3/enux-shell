@@ -1,0 +1,81 @@
+[config]
+prefer = "saturation"
+
+[config.wallpaper]
+command = "awww"
+arguments = ["img", "--transition-type", "center", "--transition-fps", "60", "--transition-step", "255"]
+set = true
+
+[templates.hyprland]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+
+[templates.waybar]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.wlogout]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/wlogout/styles/colors.css'
+
+[templates.swaync]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/colors.css'
+output_path = '~/.config/swaync/colors/colors.css'
+post_hook = 'swaync-client -rs'
+
+[templates.rofi]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors/colors.rasi'
+
+[templates.kitty]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/kitty-colors.conf'
+output_path = '~/.config/kitty/colors.conf'
+post_hook = 'kill -SIGUSR1 $(pgrep kitty)'
+
+[templates.gtk3]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/matugen-gtk.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.gtk4]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/matugen-gtk.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.hyprland-lua]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/hyprland-colors.lua'
+output_path = '~/.config/hypr/colors.lua'
+post_hook = 'hyprctl reload'
+
+[templates.wayle]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/wayle-colors.json'
+output_path = '~/.cache/wayle/matugen-colors.json'
+post_hook = 'touch ~/.config/wayle/styles/index.scss'
+
+[templates.btop]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/btop-colors.theme'
+output_path = '~/.config/btop/themes/current.theme'
+
+[templates.ohmyposh]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/ohmyposh.omp.json'
+output_path = '~/.config/ohmyposh/theme1.omp.json'
+expr_prefix = "[["
+expr_postfix = "]]"
+
+[templates.neovim]
+type = "SchemeContent"
+input_path = '~/.config/matugen/templates/nvim-colors.json'
+output_path = '~/.config/matugen/colors.json'
+
+
