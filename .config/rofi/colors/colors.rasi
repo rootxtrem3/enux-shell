@@ -1,0 +1,8 @@
+* {
+    background:                  rgba(21, 19, 17, 0.8);
+    background-alt:              #4c463d;
+    foreground:                  #e7e1de;
+    selected:                    #d5c4ab;
+    active:                      #d5c4ab;
+    urgent:                      #ffb4ab;
+}
