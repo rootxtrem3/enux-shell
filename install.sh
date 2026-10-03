@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Enux rice installer — Hyprland + QuickShell.
+# enux-shell installer — Hyprland + QuickShell.
 #
 #   ./install.sh              install dependencies, then link the config
 #   ./install.sh --dry-run    print every action, change nothing

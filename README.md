@@ -1,6 +1,6 @@
-# hyprland-quickshell-rice
+# enux-shell
 
-My Hyprland + QuickShell desktop.
+My Enux desktop shell: Hyprland + QuickShell.
 
 Hyprland is driven by a Lua config (via `hyprlang`, the `hl.*` API) and the shell
 is a QuickShell/QML bar I wrote. Colors come from `matugen`, which reads the

@@ -22,7 +22,7 @@ __pycache__/
 *.bak-*
 
 # Unreferenced rofi launcher variants and images. Kept out of the repo because
-# nothing in the rice loads them: only colors/colors.rasi, launchers/type-1/
+# nothing in this shell loads them: only colors/colors.rasi, launchers/type-1/
 # calc.rasi and launchers/type-1/style-9.rasi are actually referenced (by
 # hypr/scripts/*.rasi, wallpaper-picker.sh, theme-switcher.sh and binds.lua).
 # The rest came from an older Axolotl install and is ~1.4MB of dead weight.
