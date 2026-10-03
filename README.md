@@ -119,6 +119,14 @@ wallpaper changes
   `shell.qml`, so the key does nothing. Left as-is; add the handler to `shell.qml`
   or point the bind at `hyprsunset` directly. (`Super+Shift+I` → `toggleIdle` is
   fine.)
-- **`binds.lua` hardcodes `/home/rootx/`** in two `quickshell ipc` calls. Change it
-  to `$HOME` if you install under a different username.
+- **Paths are relative.** `binds.lua`, `autostart.lua` and `wallpaper-quick.sh` use
+  `~` or `$HOME`, so the repo works under any username. The one exception is
+  `hypr/colors.lua` and `hypr/colors.conf`, which still carry an absolute
+  `/home/rootx/...` wallpaper path. Both are matugen output — it rewrites them on
+  every wallpaper change — and the path has to stay absolute because
+  `WallpaperService` compares `colors.lua`'s `image` field against the absolute
+  paths it builds from `$HOME/Pictures/Wallpapers` to tick the current wallpaper
+  in the picker. It only records your username, not anything sensitive.
+- `wallpaper-quick.sh` points at `~/Projects/hyprquickpicker`, which is **not** in
+  this repo. Override with `HYPRQUICKPICKER=/path/to/shell.qml`'s directory.
 - Wallpapers, `*.bak`, `__pycache__` and `hypr/backups/` are not tracked.

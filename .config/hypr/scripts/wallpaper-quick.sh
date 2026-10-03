@@ -4,7 +4,7 @@
 
 set -e
 
-SCRIPT_DIR="/home/rootx/Projects/hyprquickpicker"
+SCRIPT_DIR="${HYPRQUICKPICKER:-$HOME/Projects/hyprquickpicker}"
 
 pkill -f 'quickshell -p .*hyprquickpicker' 2>/dev/null || true
 

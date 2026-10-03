@@ -20,7 +20,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("flatpak run app.zen_browser.zen"))
 -- Wallpaper manager
 hl.bind(
 	mainMod .. " + W",
-	hl.dsp.exec_cmd("/usr/bin/quickshell ipc --any-display -p /home/rootx/.config/quickshell/shell.qml call shell toggleWallpaperPicker")
+	hl.dsp.exec_cmd("quickshell ipc --any-display -p ~/.config/quickshell/shell.qml call shell toggleWallpaperPicker")
 )
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("~/.config/hypr/scripts/wallpaper-quick.sh"))
 
@@ -32,7 +32,7 @@ hl.bind(mainMod .. " + CONTROL + F12", hl.dsp.exec_cmd("hyprshot -o Pictures/Scr
 -- App menu (Quickshell)
 hl.bind(
 	mainMod .. " + Space",
-	hl.dsp.exec_cmd("/usr/bin/quickshell ipc --any-display -p /home/rootx/.config/quickshell/shell.qml call shell toggleLauncher")
+	hl.dsp.exec_cmd("quickshell ipc --any-display -p ~/.config/quickshell/shell.qml call shell toggleLauncher")
 )
 hl.bind(
 	mainMod .. " + C",
@@ -85,11 +85,11 @@ hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("~/.config/hypr/scripts/night-mode.sh
 -- hyprsunset / hypridle toggles (via quickshell for state sync)
 hl.bind(
 	mainMod .. " + SHIFT + N",
-	hl.dsp.exec_cmd("/usr/bin/quickshell ipc --any-display -p /home/rootx/.config/quickshell/shell.qml call shell toggleSunset")
+	hl.dsp.exec_cmd("quickshell ipc --any-display -p ~/.config/quickshell/shell.qml call shell toggleSunset")
 )
 hl.bind(
 	mainMod .. " + SHIFT + I",
-	hl.dsp.exec_cmd("/usr/bin/quickshell ipc --any-display -p /home/rootx/.config/quickshell/shell.qml call shell toggleIdle")
+	hl.dsp.exec_cmd("quickshell ipc --any-display -p ~/.config/quickshell/shell.qml call shell toggleIdle")
 )
 
 -- Lock
