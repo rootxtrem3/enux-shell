@@ -114,6 +114,11 @@ wallpaper changes
 - **rofi is trimmed.** Only `colors/colors.rasi`, `launchers/type-1/calc.rasi` and
   `launchers/type-1/style-9.rasi` are referenced. The `type-2/`, `type-6/` and
   `images/` directories are gitignored.
+- **`Super+Shift+N` is bound to a function that does not exist.** `binds.lua` calls
+  `quickshell ipc ... call shell toggleSunset`, but no `toggleSunset` is defined in
+  `shell.qml`, so the key does nothing. Left as-is; add the handler to `shell.qml`
+  or point the bind at `hyprsunset` directly. (`Super+Shift+I` → `toggleIdle` is
+  fine.)
 - **`binds.lua` hardcodes `/home/rootx/`** in two `quickshell ipc` calls. Change it
   to `$HOME` if you install under a different username.
 - Wallpapers, `*.bak`, `__pycache__` and `hypr/backups/` are not tracked.
